@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contact</a>
+                        <a class="nav-link " href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -77,7 +77,9 @@
                     </div>
                     <button class="btn button" onclick="toggleDetail(event)">More info</button>
                 </div>
-                <p class="about-exp-item-detail" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
+                <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur
+                    corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea
+                    perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
             </div>
             <div class="about-exp-item">
                 <div class="about-exp-item-header">
@@ -87,7 +89,9 @@
                     </div>
                     <button class="btn button" onclick="toggleDetail(event)">More info</button>
                 </div>
-                <p class="about-exp-item-detail" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
+                <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur
+                    corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea
+                    perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
             </div>
             <div class="about-exp-item">
                 <div class="about-exp-item-header">
@@ -97,7 +101,9 @@
                     </div>
                     <button class="btn button" onclick="toggleDetail(event)">More info</button>
                 </div>
-                <p class="about-exp-item-detail" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
+                <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur
+                    corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea
+                    perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
             </div>
         </div>
 
@@ -106,26 +112,73 @@
 
     <!-- WORK SECTION -->
     <section id="work" class="work container">
-            <div class="row d-flex align-items-center gap-5">
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam porro sit! Assumenda minus eaque qui maiores eligendi ad consequatur omnis non reprehenderit hic dolorem, neque quo praesentium cupiditate cumque, ut sunt molestiae inventore architecto tenetur deleniti aut. Sed laboriosam, magni iste eaque aliquam velit beatae excepturi modi voluptatem nam?</p>
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam porro sit! Assumenda minus
+                    eaque qui maiores eligendi ad consequatur omnis non reprehenderit hic dolorem, neque quo praesentium
+                    cupiditate cumque, ut sunt molestiae inventore architecto tenetur deleniti aut. Sed laboriosam,
+                    magni iste eaque aliquam velit beatae excepturi modi voluptatem nam?</p>
+            </div>
+            <div class="col work-img">
+                <div id="work-1" class="work-img-item">
+                    <img src="images/work-1.png" alt="work-1" id="work-1">
                 </div>
-                <div class="col work-img">
-                    <div id="work-1" class="work-img-item">
-                        <img src="images/work-1.png" alt="work-1" id="work-1">
+                <div id="work-2" class="work-img-item">
+                    <img src="images/work-2.png" alt="work-2" id="work-2">
+                </div>
+                <div id="work-3" class="work-img-item">
+                    <img src="images/work-3.png" alt="work-3" id="work-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END WORK SECTION -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vero quidem eius assumenda nobis
+                    aliquid vel ab pariatur iure vitae a, praesentium exercitationem facilis incidunt perferendis earum
+                    laudantium natus quisquam repellendus voluptate ut. Repudiandae magni amet magnam dolorem facere
+                    reprehenderit distinctio voluptates voluptatem in, ut neque aperiam. Vero, voluptate earum?</p>
+
+                <div class="row d-flex">
+                    <div class="col d-flex align-items-center">
+                        <img src="images/Facebook.svg" alt="facebook">
+                        <p>John Doe</p>
                     </div>
-                    <div id="work-2" class="work-img-item">
-                        <img src="images/work-2.png" alt="work-2" id="work-2">
+                    <div class="col d-flex align-items-center">
+                        <img src="images/Twitter.svg" alt="Twitter">
+                        <p>John Doe</p>
                     </div>
-                    <div id="work-3" class="work-img-item">
-                        <img src="images/work-3.png" alt="work-3" id="work-3">
+                    <div class="col d-flex align-items-center">
+                        <img src="images/Instagram.svg" alt="Instagram">
+                        <p>John Doe</p>
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <form class="form-contact" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                        <label for="inp_email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp_subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="inp_subject" placeholder="Your subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp_message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="inp_message" placeholder="Your message">
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
-
-
-
     <!-- library jquery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>

@@ -145,3 +145,22 @@ section::before {
     position: relative;
 }
 
+/* CONTACT SECTION */
+
+.contact::before {
+    content: 'Contact';
+}
+
+.form-contact {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding:  64px 32px;
+}
+
+.contact {
+    padding-bottom: 128px;
+}
+
+.contact label {
+    font-weight: 700;
+}
