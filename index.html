@@ -1,50 +1,51 @@
-   <!DOCTYPE html>
-   <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
-      <title>portfolio</title>
-   </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
 
-   <body>
+<body>
     <!-- NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand fw-bold fs-4" href="#">John Doe</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand fw-bold fs-4" href="#">John Doe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-      <!-- HOME SECTION -->
-      <section id="home" class="home container">
+    </nav>
+    <!-- HOME SECTION -->
+    <section id="home" class="home container">
         <div class="row d-flex align-items-center">
             <div class="col-8">
                 <h3 class="fw-semi-bold">Hi! i am</h3>
                 <h1 class="fw-bold">John doe</h1>
                 <p>Iam software engineer base in indonesia</p>
-                <a class="btn " href="images/potrait.png" download="">Resume</a>
+                <a class="btn button" href="images/potrait.png" download="">Resume</a>
             </div>
             <div class="col-4">
                 <img class="border border-5 border-dark rounded-circle p-1" src="images/potrait.png" alt="potrait">
@@ -56,22 +57,63 @@
             <a class="text-decoration-none text-black" href="#about">More info</a>
             <img id="arrow" src="images/arrow.svg" alt="">
         </div>
-      </section>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nulla? Consequatur est exercitationem
+            voluptatem tempora saepe quidem. Architecto accusamus quasi id nam, recusandae repudiandae obcaecati quis
+            iste ad. Est beatae repudiandae cum rem, totam in, perferendis quo corporis ipsa cupiditate magnam quos? Est
+            cumque temporibus excepturi amet nostrum reiciendis magni!</p>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Software engineer</h5>
+                        <p>Coding studio (2021-now)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More info</button>
+                </div>
+                <p class="about-exp-item-detail" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Software engineer</h5>
+                        <p>Coding studio (2021-now)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More info</button>
+                </div>
+                <p class="about-exp-item-detail" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Software engineer</h5>
+                        <p>Coding studio (2021-now)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More info</button>
+                </div>
+                <p class="about-exp-item-detail" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur corporis veniam cum esse! Consequatur voluptas amet eius harum nihil, impedit iste! Iusto ea perferendis repellendus fugit voluptatem. Deleniti, nihil?</p>
+            </div>
+        </div>
+
+    </section>
 
 
 
-      <!-- library jquery -->
-      <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-      <!-- botstrap js -->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-         crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-         crossorigin="anonymous"></script>
-      <!-- my js -->
-      <script src="main.js"></script>
-   </body>
+    <!-- library jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- botstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- my js -->
+    <script src="/main.js"></script>
+</body>
 
-   </html>
+</html>
