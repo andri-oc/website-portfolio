@@ -34,6 +34,10 @@ section::before {
     color: rgb(255, 255, 255);
 }
 
+.home img {
+    width: 100%;
+}
+
 .home h1 {
     font-size: 78px;
 }
@@ -51,19 +55,6 @@ section::before {
     animation: 1.2s upDown infinite;
 }
 
-@keyframes upDown {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
 
 /* ABOUT SECTION */
 .about::before {
@@ -163,4 +154,38 @@ section::before {
 
 .contact label {
     font-weight: 700;
+}
+
+/* ANIMATION */
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* MENDIA QUERY */
+@media only screen and (max-width: 768px){
+    .home img {
+        width: 50%;
+    }
+    .arrow img {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left:10px;
+        font-size: 62px;
+    }
 }

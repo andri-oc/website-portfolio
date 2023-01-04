@@ -42,23 +42,23 @@
 
     <!-- HOME SECTION -->
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-8">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semi-bold">Hi! i am</h3>
                 <h1 class="fw-bold">John doe</h1>
                 <p>Iam software engineer base in indonesia</p>
                 <a class="btn button" href="images/potrait.png" download="">Resume</a>
             </div>
-            <div class="col-4">
-                <img class="border border-5 border-dark rounded-circle p-1" src="images/potrait.png" alt="potrait">
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img class="border border-4 border-dark rounded-circle p-1" src="images/potrait.png" alt="potrait">
             </div>
         </div>
 
         <!-- arrow -->
-        <div class="arrow d-flex align-items-center flex-column">
-            <a class="text-decoration-none text-black" href="#about">More info</a>
-            <img id="arrow" src="images/arrow.svg" alt="">
-        </div>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-black">More info</div>
+            <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow">
+        </a>
     </section>
     <!-- END HOME SECTION -->
 
@@ -113,13 +113,13 @@
     <!-- WORK SECTION -->
     <section id="work" class="work container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam porro sit! Assumenda minus
                     eaque qui maiores eligendi ad consequatur omnis non reprehenderit hic dolorem, neque quo praesentium
                     cupiditate cumque, ut sunt molestiae inventore architecto tenetur deleniti aut. Sed laboriosam,
                     magni iste eaque aliquam velit beatae excepturi modi voluptatem nam?</p>
             </div>
-            <div class="col work-img">
+            <div class="col-12 col-6 work-img">
                 <div id="work-1" class="work-img-item">
                     <img src="images/work-1.png" alt="work-1" id="work-1">
                 </div>
@@ -137,7 +137,7 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vero quidem eius assumenda nobis
                     aliquid vel ab pariatur iure vitae a, praesentium exercitationem facilis incidunt perferendis earum
                     laudantium natus quisquam repellendus voluptate ut. Repudiandae magni amet magnam dolorem facere
@@ -145,20 +145,20 @@
 
                 <div class="row d-flex">
                     <div class="col d-flex align-items-center">
-                        <img src="images/Facebook.svg" alt="facebook">
-                        <p>John Doe</p>
+                        <img class="w-25" src="images/Facebook.svg" alt="facebook">
+                        <p class="mb-0 ms-2">John Doe</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="images/Twitter.svg" alt="Twitter">
-                        <p>John Doe</p>
+                        <img class="w-25" src="images/Twitter.svg" alt="Twitter">
+                        <p class="mb-0 ms-2">John Doe</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="images/Instagram.svg" alt="Instagram">
-                        <p>John Doe</p>
+                        <img class="w-25" src="images/Instagram.svg" alt="Instagram">
+                        <p class="mb-0 ms-2">John Doe</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-5">
                 <form class="form-contact" onsubmit="onFormSubmit(event)">
                     <div class="mb-3">
                         <label for="inp_email" class="form-label">Email address</label>
