@@ -2,3 +2,51 @@
     background-color: white;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
+
+/* home section */
+section {
+    padding-top: 124px;
+}
+
+.btn {
+    border: 3px solid black;
+    border-radius: 24px;
+    width: 150px;
+}
+
+.btn:hover {
+    border: 3px solid black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.home h1 {
+    font-size: 78px;
+}
+
+.home h3 {
+    font-size: 48px;
+}
+
+.arrow img {
+    width: 50px;
+}
+
+
+#arrow {
+    animation: 1.2s upDown infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
