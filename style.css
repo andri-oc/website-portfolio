@@ -1,4 +1,9 @@
+body {
+    background-color: #D9E3F1;
+}
+
 .navbar {
+
     background-color: white;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
 }
@@ -30,6 +35,7 @@ section::before {
     border: 3px solid black;
     border-radius: 24px;
     width: 150px;
+    background-color: #D9E3F1;    
 }
 
 .button:hover, .btn.button.active {
@@ -145,6 +151,55 @@ section::before {
     content: "skill";
 }
 
+.progress {
+    --bs-progress-height: 1.5rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #d9e3f1;
+    --bs-progress-border-radius: 50rem;
+    --bs-progress-box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3), inset -3px -2px 5px rgba(255, 255, 255, 0.8);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius);
+    box-shadow: var(--bs-progress-box-shadow);
+  }
+  
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-progress-bar-bg);
+    transition: var(--bs-progress-bar-transition);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .progress-bar {
+      transition: none;
+    }
+  }
+  
+  .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: var(--bs-progress-height) var(--bs-progress-height);
+  }
+  
+  .progress-bar-animated {
+    animation: 1s linear infinite progress-bar-stripes;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .progress-bar-animated {
+      animation: none;
+    }
+  }
+
+
 
 /* CONTACT SECTION */
 
@@ -153,8 +208,6 @@ section::before {
 }
 
 .form-contact {
-    border: 3px solid black;
-    border-radius: 10px;
     padding:  64px 32px;
 }
 
@@ -163,7 +216,15 @@ section::before {
 }
 
 .contact label {
-    font-weight: 700;
+    font-weight: 700;    
+}
+
+.contact input {
+    background-color: #D9E3F1;
+}
+
+.contact input:focus {
+    background-color: #D9E3F1;
 }
 
 /* ANIMATION */

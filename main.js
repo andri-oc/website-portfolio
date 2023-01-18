@@ -40,3 +40,7 @@ function onFormSubmit (e) {
         $(message).val("");
     }
 }
+
+AOS.init({
+    duration: 1500
+});
