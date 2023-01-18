@@ -140,6 +140,12 @@ section::before {
     position: relative;
 }
 
+/* skill section */
+#skill::before {
+    content: "skill";
+}
+
+
 /* CONTACT SECTION */
 
 .contact::before {
