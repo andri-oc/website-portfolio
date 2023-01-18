@@ -40,3 +40,5 @@ function onFormSubmit (e) {
         $(message).val("");
     }
 }
+
+AOS.init();
