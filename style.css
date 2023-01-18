@@ -33,6 +33,7 @@ section::before {
     border: 3px solid black;
     border-radius: 24px;
     width: 150px;
+    background-color: #D9E3F1;    
 }
 
 .button:hover, .btn.button.active {
@@ -155,7 +156,6 @@ section::before {
     --bs-progress-border-radius: 50rem;
     --bs-progress-box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3), inset -3px -2px 5px rgba(255, 255, 255, 0.8);
     --bs-progress-bar-color: #fff;
-    --bs-progress-bar-bg: #378dfc;
     --bs-progress-bar-transition: width 0.6s ease;
     display: flex;
     height: var(--bs-progress-height);
@@ -213,7 +213,15 @@ section::before {
 }
 
 .contact label {
-    font-weight: 700;
+    font-weight: 700;    
+}
+
+.contact input {
+    background-color: #D9E3F1;
+}
+
+.contact input:focus {
+    background-color: #D9E3F1;
 }
 
 /* ANIMATION */

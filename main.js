@@ -41,4 +41,6 @@ function onFormSubmit (e) {
     }
 }
 
-AOS.init();
+AOS.init({
+    duration: 1500
+});
