@@ -1,6 +1,10 @@
 .navbar {
     background-color: white;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-nav a:hover {
+    color: black;
 }
 
 /* home section */
@@ -135,6 +139,12 @@ section::before {
 .work-img-item {
     position: relative;
 }
+
+/* skill section */
+#skill::before {
+    content: "skill";
+}
+
 
 /* CONTACT SECTION */
 
