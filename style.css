@@ -3,7 +3,12 @@ body {
 }
 
 .navbar {
-    background-color: #D9E3F1;    
+    z-index: 9999;
+    background-color: #D9E3F1;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
 }
 
 .navbar-nav a:hover {
