@@ -16,7 +16,7 @@
 
 <br>
  <div align="center">
- <img src="MacBook Pro 14_ - 1.png">
+ <img src="MacBook.png">
   </div> <br>
 
 
